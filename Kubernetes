@@ -1,0 +1,39 @@
+
+How user request flow to pod running inside k8s cluster
+In this blog post, we will go through how user request flow to pod and how user receive response back from Pod in a Kubernetes Cluster.
+
+The forward flow of a user request to a container running inside a Kubernetes cluster refers to the path that the request takes from the user’s device to the container. The response flow refers to the path that the response takes from the container back to the user’s device.
+
+
+Request Flow to pod from User
+In a Kubernetes cluster, the forward flow and response flow are facilitated by various components, such as the load balancer, the Ingress controller, the nodes, the kube-proxy, the pods, and the containers. These components work together to route traffic to and from the containers running inside the cluster, allowing users to access the services running inside the cluster.
+
+How user request to a container running inside a Kubernetes cluster
+The user A sends a request to the IP address and port of the load balancer. For example, the user may send a request to http://10.0.0.1:8080.
+The load balancer receives the request and forwards it to the IP address and port of a node in the cluster. For example, the load balancer may forward the request to http://10.0.0.2:8080.
+The node receives the request and forwards it to the IP address and port of the kube-proxy. The kube-proxy is a daemon that runs on each node in the cluster and listens for incoming traffic on a specified port. For example, the node may forward the request to http://10.0.0.2:30000.
+The kube-proxy receives the request and looks up the service associated with the request based on the service’s virtual IP (VIP) and port. The VIP is a virtual IP that is assigned to the service and is used to access the service from within the cluster. The port is the port that the service listens on and is used to route the request to the appropriate pod. For example, the kube-proxy may look up a service with VIP 10.0.0.3 and port 80.
+The kube-proxy forwards the request to one of the endpoints of the service, which are the pods that are part of the service and forwards the request to one of the endpoints. The endpoints are selected based on a variety of factors, such as the pod’s readiness, the pod’s resource usage, and the pod’s network latency. For example, the kube-proxy may forward the request to a pod with IP address 10.0.0.4 and port 8080.
+The pod receives the request and forwards it to the container running inside the pod. The container is responsible for processing the request and generating a response.
+Let's see how response back to User from pod
+Here is a more detailed explanation of the response flow from a pod to user A in the example I provided, including Ingress controllers, NodePort, IP addresses, and ClusterIP:
+
+The pod sends the response back to the container’s IP address and port. The pod receives the response from the container and sends it back to the container’s IP address and port. The container’s IP address and port are unique to the container and are used to communicate with the container from within the pod.
+The container sends the response back to the pod’s IP address and the service’s port. The pod’s IP address is the unique IP address of the pod and is used to communicate with the pod from within the cluster. The service’s port is the port that the service listens on and is used to route the response to the appropriate service.
+The pod sends the response back to the kube-proxy’s IP address and port. The kube-proxy is a daemon that runs on each node in the cluster and is responsible for routing traffic to and from the pods.
+The kube-proxy receives the response and forwards it to the service’s ClusterIP and port. The ClusterIP is a virtual IP that is only accessible from within the cluster and is used to access the service from within the cluster. The port is the port that the service listens on and is used to route the response to the appropriate service.
+The node receives the response and forwards it to the Ingress controller’s IP address and port. The Ingress controller is a component that routes incoming traffic to the appropriate service based on the request’s hostname and path.
+The Ingress controller receives the response and forwards it to the load balancer’s IP address and port. The load balancer is responsible for distributing incoming traffic evenly across the nodes in the cluster.
+The load balancer receives the response and forwards it to the user’s IP address and port. The user’s IP address and port are the IP address and port of the device that the user is using to access the cluster.
+User A receives the response from the load balancer, completing the request-response cycle.
+Here is a summary of the forward flow of a user request to a container running inside a Kubernetes cluster, and the response flow from the container back to the user:
+
+The forward flow begins when the user sends a request to the IP address and port of the load balancer. The load balancer forwards the request to the IP address and port of an Ingress controller. The Ingress controller forwards the request to the IP address and port of a node in the cluster.
+
+The node forwards the request to the IP address and port of the kube-proxy. The kube-proxy looks up the service associated with the request based on the service’s virtual IP (VIP) and port and forwards the request to one of the endpoints of the service, which are the pods that are part of the service. The pod receives the request and passes it to the container running inside the pod.
+
+The response flow begins when the pod receives the response from the container and sends it back to the container’s IP address and port. The container sends the response back to the pod’s IP address and the service’s port. The pod sends the response back to the kube-proxy’s IP address and port. The kube-proxy receives the response and forwards it to the service’s ClusterIP and port.
+
+The node receives the response and forwards it to the Ingress controller’s IP address and port. The Ingress controller receives the response and forwards it to the load balancer’s IP address and port. The load balancer receives the response and forwards it to the user’s IP address and port. Finally, the user receives the response from the load balancer, completing the request-response cycle.
+
+I hope this summary helps you understand the forward and response flows in the example I provided. Let me know if you have any questions or need further clarification.
