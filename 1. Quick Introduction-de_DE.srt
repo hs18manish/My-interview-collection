@@ -1,0 +1,148 @@
+1
+00:00:00,150 --> 00:00:01,848
+Hallo und willkommen zu diesem Kurs.
+
+2
+00:00:01,872 --> 00:00:06,575
+In diesem Kurs lernen Sie alles über Amazon Web Services
+
+3
+00:00:06,599 --> 00:00:12,310
+und AWS und können sich darauf vorbereiten, Ihre AWS Certified Cloud Practitioner-Prüfung zu bestehen.
+
+4
+00:00:12,660 --> 00:00:17,962
+Das Tolle an der Cloud Practitioner-Prüfung ist, dass sie wirklich für Menschen mit unterschiedlichem Hintergrund
+
+5
+00:00:17,987 --> 00:00:19,080
+geeignet ist.
+
+6
+00:00:19,230 --> 00:00:24,549
+Es spielt also keine Rolle, ob Sie nicht viel technischen Hintergrund haben oder ob Sie einen
+
+7
+00:00:24,574 --> 00:00:28,440
+technischen Hintergrund haben und Ihre Fähigkeiten in die Cloud übertragen möchten.
+
+8
+00:00:29,040 --> 00:00:31,419
+Wo immer Sie herkommen, sind Sie hier richtig.
+
+9
+00:00:31,453 --> 00:00:35,108
+Alles, was Sie brauchen, ist hier, um sicherzustellen, dass Sie Ihre Prüfung bestehen können.
+
+10
+00:00:35,550 --> 00:00:38,630
+Unabhängig von Ihrem bevorzugten Lernstil sind Sie bei uns genau richtig.
+
+11
+00:00:38,790 --> 00:00:43,230
+Wenn Sie visuell lernen, werden Sie die animierten Diagramme während des gesamten Kurses lieben.
+
+12
+00:00:43,620 --> 00:00:49,281
+Wenn Sie gerne lesen, werden Sie die Fakten, die wir Ihnen präsentieren, und die
+
+13
+00:00:49,306 --> 00:00:53,040
+von uns erstellten Spickzettel mit den prüfungsspezifischen Informationen genießen.
+
+14
+00:00:53,190 --> 00:00:58,499
+Wenn Sie ein praktischer Lernender sind, werden Sie die praktischen Lektionen lieben, damit Sie mit AWS praktisch werden
+
+15
+00:00:58,524 --> 00:01:00,709
+und auf praktische Weise lernen können.
+
+16
+00:01:01,074 --> 00:01:06,484
+In Bezug auf die praktischen Lektionen gibt es in diesem Kurs zwei verschiedene Arten von praktischen Lektionen.
+
+17
+00:01:06,630 --> 00:01:07,939
+Eines ist eine Demo.
+
+18
+00:01:07,963 --> 00:01:12,177
+Am Anfang des Lektionsnamens sehen Sie das Wort Demo in eckigen Klammern.
+
+19
+00:01:12,330 --> 00:01:15,090
+Jetzt ist eine Demo eine reine Demonstration.
+
+20
+00:01:15,227 --> 00:01:18,487
+Ich werde dir etwas zeigen. Sie müssen nicht mitmachen.
+
+21
+00:01:18,690 --> 00:01:24,576
+Der Grund, warum ich das tue, ist, dass es einige Beispiele dafür gibt, wo ich Ihnen etwas
+
+22
+00:01:24,601 --> 00:01:29,216
+visuell zeigen möchte, damit ich Ihnen einige Funktionen von AWS demonstrieren kann.
+
+23
+00:01:29,490 --> 00:01:34,014
+Die Einrichtung ist jedoch möglicherweise etwas komplexer, als es die Prüfung für Cloud-Praktiker erfordert.
+
+24
+00:01:34,290 --> 00:01:38,400
+Es gibt also nur einige davon, aber sie sind eine nützliche Möglichkeit, Ihnen einige Dinge zu zeigen.
+
+25
+00:01:38,790 --> 00:01:41,112
+Jetzt ist die andere eine praktische Lektion.
+
+26
+00:01:41,136 --> 00:01:45,801
+Das hat die Buchstaben. HOL in eckigen Klammern am Anfang des Unterrichtsnamens.
+
+27
+00:01:46,219 --> 00:01:53,585
+Jetzt ist eine praktische Lektion eine Fortsetzung, sodass Sie AWS in Ihrem eigenen kostenlosen Tier-Konto durchgehen und
+
+28
+00:01:53,609 --> 00:01:55,864
+tatsächlich auf AWS aufbauen können.
+
+29
+00:01:55,950 --> 00:02:01,355
+Es gibt Ihnen die praktische Erfahrung, die wirklich der beste Weg ist, um zu lernen und kompetent zu werden.
+
+30
+00:02:01,560 --> 00:02:07,077
+Am Ende vieler Abschnitte finden Sie eine Lektion mit Links zu unseren Spickzettel sowie ein Quiz,
+
+31
+00:02:07,102 --> 00:02:10,668
+mit dem Sie sich während des Kurses testen können.
+
+32
+00:02:10,710 --> 00:02:13,265
+Oft gibt es auch eine Prüfungsstunde.
+
+33
+00:02:13,346 --> 00:02:19,611
+Dies ist ein rasanter Durchlauf der coolen Fakten, die sich ideal für eine Überarbeitung eignen, bevor Sie Ihre Prüfung ablegen.
+
+34
+00:02:19,882 --> 00:02:24,727
+Am Ende des Kurses gibt es auch eine Übungsprüfung in voller Länge, damit Sie sich selbst testen und sehen können,
+
+35
+00:02:24,751 --> 00:02:27,095
+ob Sie bereit sind, die reale Sache zu absolvieren.
+
+36
+00:02:27,120 --> 00:02:29,370
+Alles, was Sie brauchen, finden Sie hier im Kurs.
+
+37
+00:02:29,400 --> 00:02:32,306
+Ich hoffe es gefällt euch und wir sehen uns in der nächsten Lektion.
+
